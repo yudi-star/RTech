@@ -65,7 +65,6 @@ class CategoriaResource extends Resource
                         ->label('Activo')
                         ->default(true)
                 ])
-
             ]);
     }
 
