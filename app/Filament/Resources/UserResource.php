@@ -14,7 +14,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-
+use App\Filament\Resources\UserResource\RelationManagers\OrdenesRelationManager;
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
@@ -23,6 +23,10 @@ class UserResource extends Resource
     protected static ?string $pluralLabel = 'Usuarios'; // Nombre plural
 
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
+
+    protected static ?string $recordTitleAttribute = 'name';
+
+    protected static ?int $navigationSort = 1;
 
     public static function form(Form $form): Form
     {
@@ -88,8 +92,13 @@ class UserResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            OrdenesRelationManager::class,
         ];
+    }
+
+    public static function getGlobalSearchableAttributes(): array
+    {
+        return ['name', 'email'];
     }
 
     public static function getPages(): array
