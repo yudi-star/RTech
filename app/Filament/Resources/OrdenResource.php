@@ -33,6 +33,7 @@ use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\DeleteAction;
+use App\Filament\Resources\OrdenResource\RelationManagers\DireccionRelationManager;
 
 class OrdenResource extends Resource
 {
@@ -60,7 +61,7 @@ class OrdenResource extends Resource
                                 ->label('Método de pago')
                                 ->options([
                                     'tarjeta' => 'Tarjeta',
-                                    'efectivo' => 'Pagar con efectivo cuando se entregue',
+                                    'efectivo' => 'Pagar con efectivo cuando se le entregue el pedido',
                                 ])
                                 ->required(),
 
@@ -270,7 +271,7 @@ class OrdenResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            DireccionRelationManager::class,
         ];
     }
 
