@@ -14,7 +14,7 @@ class Producto extends Model
         'marca_id', 
         'nombre', 
         'slug',
-        'imagen',
+        'imagenes',
         'descripcion', 
         'precio',
         'es_activo',

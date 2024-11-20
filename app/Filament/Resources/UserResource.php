@@ -14,7 +14,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-
+use App\Filament\Resources\UserResource\RelationManagers\OrdenesRelationManager;
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
@@ -88,7 +88,7 @@ class UserResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            OrdenesRelationManager::class,
         ];
     }
 
