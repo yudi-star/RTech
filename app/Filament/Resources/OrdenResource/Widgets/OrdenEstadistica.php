@@ -17,7 +17,7 @@ class OrdenEstadistica extends BaseWidget
             Stat::make('Ordenes enviadas', Orden::query()->where('estado', 'enviado')->count()),
             Stat::make('Ordenes entregadas', Orden::query()->where('estado', 'entregado')->count()),
             Stat::make('Ordenes canceladas', Orden::query()->where('estado', 'cancelado')->count()),
-            Stat::make("Precio promedio de los pedidos", Number::currency(Orden::query()->avg('total'), 'PEN')),
+            Stat::make("Precio promedio de los pedidos", Number::currency(Orden::query()->avg('total') ?? 0, 'PEN')),
         ];
     }
 }
