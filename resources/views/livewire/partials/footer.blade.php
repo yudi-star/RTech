@@ -4,24 +4,22 @@
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
         <div class="col-span-full lg:col-span-1">
           <a class="flex-none text-xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-label="Brand">
-            <img src="{{asset('images/logo-reborntech1.png')}}" alt="Logo" class="w-28 h-12">
+            <img src="{{asset('images/rtech_logo.png')}}" alt="Logo" class="w-48 h-12">
           </a>
         </div>
         <!-- End Col -->
   
         <div class="col-span-1">
-          <h4 class="font-semibold text-gray-100">Product</h4>
+          <h4 class="font-semibold text-gray-100">Te ayudamos</h4>
   
           <div class="mt-3 grid space-y-3">
-            <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/categories">Categories</a></p>
-            <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/products">All Products</a></p>
-            <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/products">Featured Products</a></p>
+            <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/categories">Atencion al cliente</a></p>
           </div>
         </div>
         <!-- End Col -->
   
         <div class="col-span-1">
-          <h4 class="font-semibold text-gray-100">Company</h4>
+          <h4 class="font-semibold text-gray-100">Sobre nosotros</h4>
   
           <div class="mt-3 grid space-y-3">
             <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">About us</a></p>
@@ -33,7 +31,7 @@
         <!-- End Col -->
   
         <div class="col-span-2">
-          <h4 class="font-semibold text-gray-100">Stay up to date</h4>
+          <h4 class="font-semibold text-gray-100">Suscribete a nuestro newsletter</h4>
   
           <form>
             <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-gray-800">
@@ -53,7 +51,7 @@
   
       <div class="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
         <div class="flex justify-between items-center">
-          <p class="text-sm text-gray-400">© 2024 DCodeMania. All rights reserved.</p>
+          <p class="text-sm text-gray-400">© 2024 RebornTech. Todos los derechos reservados.</p>
         </div>
         <!-- End Col -->
   
