@@ -111,12 +111,14 @@
             <!-- End Col -->
       
             <div class="relative ms-4">
-              <img class="w-full rounded-md" src="https://static.vecteezy.com/system/resources/previews/011/993/278/non_2x/3d-render-online-shopping-bag-using-credit-card-or-cash-for-future-use-credit-card-money-financial-security-on-mobile-3d-application-3d-shop-purchase-basket-retail-store-on-e-commerce-free-png.png" alt="Image Description">
+              <img 
+                    class="w-300 rounded-md my-20 mx-auto" src="{{asset('images/carritoP.png')}}"alt="Image Description">
+
               <div class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
       
               <!-- SVG-->
               <div class="absolute bottom-0 start-0">
-                <svg class="w-2/3 ms-auto h-auto text-white dark:text-slate-900" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {{-- <svg class="w-2/3 ms-auto h-auto text-white dark:text-slate-900" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="531" y="352" width="99" height="99" fill="currentColor" />
                   <rect x="140" y="352" width="106" height="99" fill="currentColor" />
                   <rect x="482" y="402" width="64" height="49" fill="currentColor" />
@@ -134,7 +136,7 @@
                   <rect x="482" y="123" width="49" height="49" fill="currentColor" />
                   <rect x="507" y="124" width="49" height="24" fill="currentColor" />
                   <rect x="531" y="49" width="99" height="99" fill="currentColor" />
-                </svg>
+                </svg> --}}
               </div>
               <!-- End SVG-->
             </div>
@@ -150,21 +152,19 @@
         <div class="max-w-xl mx-auto">
           <div class="text-center ">
             <div class="relative flex flex-col items-center">
-              <h1 class="text-5xl font-bold dark:text-gray-200"> Browse Popular<span class="text-blue-500"> Brands
+              <h1 class="text-5xl font-bold dark:text-gray-200"> Encuentra conocidas<span class="text-yellow-300" style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;"> Marcas
                 </span> </h1>
               <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                <div class="flex-1 h-2 bg-blue-200">
+                <div class="flex-1 h-2 bg-yellow-300">
                 </div>
-                <div class="flex-1 h-2 bg-blue-400">
+                <div class="flex-1 h-2 bg-yellow-400">
                 </div>
-                <div class="flex-1 h-2 bg-blue-600">
+                <div class="flex-1 h-2 bg-yellow-500">
                 </div>
               </div>
             </div>
             <p class="mb-12 text-base text-center text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-              Pariatur
-              numquam, odio quod nobis ipsum ex cupiditate?
+              
             </p>
           </div>
         </div>
@@ -191,21 +191,19 @@
         <div class="max-w-xl mx-auto">
           <div class="text-center ">
             <div class="relative flex flex-col items-center">
-              <h1 class="text-5xl font-bold dark:text-gray-200"> Browse <span class="text-blue-500"> Categories
+              <h1 class="text-5xl font-bold dark:text-gray-200"> Encuentra diferentes <span class="text-yellow-300" style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;"> Categorías
                 </span> </h1>
               <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                <div class="flex-1 h-2 bg-blue-200">
+                <div class="flex-1 h-2 bg-yellow-300">
                 </div>
-                <div class="flex-1 h-2 bg-blue-400">
+                <div class="flex-1 h-2 bg-yellow-400">
                 </div>
-                <div class="flex-1 h-2 bg-blue-600">
+                <div class="flex-1 h-2 bg-yellow-500">
                 </div>
               </div>
             </div>
             <p class="mb-12 text-base text-center text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-              Pariatur
-              numquam, odio quod nobis ipsum ex cupiditate?
+              
             </p>
           </div>
         </div>
@@ -244,21 +242,19 @@
           <div class="max-w-xl mx-auto">
             <div class="text-center ">
               <div class="relative flex flex-col items-center">
-                <h1 class="text-5xl font-bold dark:text-gray-200"> Customer <span class="text-blue-500"> Reviews
+                <h1 class="text-5xl font-bold dark:text-gray-200"> Diferentes clientes haciendo <span class="text-yellow-300" style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;"> Reseñas
                   </span> </h1>
                 <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                  <div class="flex-1 h-2 bg-blue-200">
+                  <div class="flex-1 h-2 bg-yellow-300">
                   </div>
-                  <div class="flex-1 h-2 bg-blue-400">
+                  <div class="flex-1 h-2 bg-yellow-400">
                   </div>
-                  <div class="flex-1 h-2 bg-blue-600">
+                  <div class="flex-1 h-2 bg-yellow-500">
                   </div>
                 </div>
               </div>
               <p class="mb-12 text-base text-center text-gray-500">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus magni eius eaque?
-                Pariatur
-                numquam, odio quod nobis ipsum ex cupiditate?
+                
               </p>
             </div>
           </div>
@@ -272,23 +268,23 @@
                   </div>
                   <div>
                     <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-300">
-                      Adren Roy</h2>
-                    <p class="text-xs text-gray-500 dark:text-gray-400">Web Designer</p>
+                      Piero Rojas</h2>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Web Developer</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Joined 12, SEP , 2022
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
-                iure minus sed fugit obcaecati minima quam reiciendis dicta!
+                RebornTech es mi tienda de referencia para todo lo relacionado con electrónica. Los precios son competitivos y la selección de productos es impresionante. 
+                ¡Compré un nuevo celular y llegó en perfectas condiciones y justo a tiempo!
               </p>
               <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
                 <div class="flex px-6 mb-2 md:mb-0">
                   <ul class="flex items-center justify-start mr-4">
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -296,7 +292,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -304,7 +300,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -312,22 +308,22 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
                       </a>
                     </li>
                   </ul>
-                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Rating:<span class="font-semibold text-gray-600 dark:text-gray-300">
-                      3.0</span>
+                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Calificación:<span class="font-semibold text-gray-600 dark:text-gray-300">
+                      4.0</span>
                   </h2>
                 </div>
                 <div class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                   <div class="flex items-center">
                     <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
                           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
                           </path>
                         </svg>
@@ -336,10 +332,10 @@
                     </div>
                     <div class="flex text-sm text-gray-700 dark:text-gray-400">
                       <a href="#" class="inline-flex hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-chat" viewBox="0 0 16 16">
                           <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
                           </path>
-                        </svg>Reply</a>
+                        </svg>Responder</a>
                     </div>
                   </div>
                 </div>
@@ -353,23 +349,23 @@
                   </div>
                   <div>
                     <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-300">
-                      Sonira Roy</h2>
-                    <p class="text-xs text-gray-500 dark:text-gray-400">Manager</p>
+                      Brunela Coveñas</h2>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Mananger</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Joined 12, SEP , 2022
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
-                iure minus sed fugit obcaecati minima quam reiciendis dicta!
+                Compré un iphone en RebornTech y no podría estar más satisfecho. 
+                El proceso de compra fue sencillo y la atención al cliente excepcional. Sin duda, volveré a comprar aquí.
               </p>
               <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
                 <div class="flex px-6 mb-2 md:mb-0">
                   <ul class="flex items-center justify-start mr-4">
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -377,7 +373,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -385,7 +381,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -393,32 +389,32 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
                       </a>
                     </li>
                   </ul>
-                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Rating:<span class="font-semibold text-gray-600 dark:text-gray-300">
-                      3.0</span>
+                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Calificación:<span class="font-semibold text-gray-600 dark:text-gray-300">
+                      4.0</span>
                   </h2>
                 </div>
                 <div class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                   <div class="flex items-center">
                     <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
-                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
                           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
                           </path>
                         </svg></a>
-                      <span>12</span>
+                      <span>16</span>
                     </div>
                     <div class="flex text-sm text-gray-700 dark:text-gray-400">
                       <a href="#" class="inline-flex hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-chat" viewBox="0 0 16 16">
                           <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
                           </path>
-                        </svg>Reply</a>
+                        </svg>Responder</a>
                     </div>
                   </div>
                 </div>
@@ -432,23 +428,24 @@
                   </div>
                   <div>
                     <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-300">
-                      William harry</h2>
-                    <p class="text-xs text-gray-500 dark:text-gray-400">Marketing Officer</p>
+                      Paul Vergel</h2>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Programador Web</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Joined 12, SEP , 2022
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
-                iure minus sed fugit obcaecati minima quam reiciendis dicta!
+                RebornTech es mi tienda de confianza para todo tipo de productos electrónicos. 
+                La variedad de productos es impresionante y la calidad es excelente. 
+                Además, el servicio al cliente es excepcional. ¡Recomendado!
               </p>
               <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
                 <div class="flex px-6 mb-2 md:mb-0">
                   <ul class="flex items-center justify-start mr-4">
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -456,7 +453,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -464,7 +461,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -472,32 +469,32 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
                       </a>
                     </li>
                   </ul>
-                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Rating:<span class="font-semibold text-gray-600 dark:text-gray-300">
-                      3.0</span>
+                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Calificación:<span class="font-semibold text-gray-600 dark:text-gray-300">
+                      4.0</span>
                   </h2>
                 </div>
                 <div class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                   <div class="flex items-center">
                     <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
-                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
                           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
                           </path>
                         </svg></a>
-                      <span>12</span>
+                      <span>10</span>
                     </div>
                     <div class="flex text-sm text-gray-700 dark:text-gray-400">
                       <a href="#" class="inline-flex hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-chat" viewBox="0 0 16 16">
                           <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
                           </path>
-                        </svg>Reply</a>
+                        </svg>Responder</a>
                     </div>
                   </div>
                 </div>
@@ -511,23 +508,23 @@
                   </div>
                   <div>
                     <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-300">
-                      James jack</h2>
-                    <p class="text-xs text-gray-500 dark:text-gray-400">Java Programmer</p>
+                      Jaime Farfan</h2>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Especialista en Bases de Datos</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Joined 12, SEP , 2022
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate similique,
-                iure minus sed fugit obcaecati minima quam reiciendis dicta!
+                He tenido una excelente experiencia comprando en RebornTech. La variedad de productos electrónicos es enorme y la calidad es insuperable. 
+                Compré varios accesorios para mi celular y todos llegaron en perfecto estado.
               </p>
               <div class="flex flex-wrap justify-between pt-4 border-t dark:border-gray-700">
                 <div class="flex px-6 mb-2 md:mb-0">
                   <ul class="flex items-center justify-start mr-4">
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -535,7 +532,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -543,7 +540,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
@@ -551,32 +548,32 @@
                     </li>
                     <li>
                       <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-blue-500 dark:text-blue-400 bi bi-star-fill" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 mr-1 text-yellow-500 dark:text-yellow-400 bi bi-star-fill" viewBox="0 0 16 16">
                           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
                           </path>
                         </svg>
                       </a>
                     </li>
                   </ul>
-                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Rating:<span class="font-semibold text-gray-600 dark:text-gray-300">
-                      3.0</span>
+                  <h2 class="text-sm text-gray-500 dark:text-gray-400">Calificación:<span class="font-semibold text-gray-600 dark:text-gray-300">
+                      4.0</span>
                   </h2>
                 </div>
                 <div class="flex items-center px-6 space-x-1 text-sm font-medium text-gray-500 dark:text-gray-400">
                   <div class="flex items-center">
                     <div class="flex mr-3 text-sm text-gray-700 dark:text-gray-400">
-                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
                           <path d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a9.84 9.84 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733.058.119.103.242.138.363.077.27.113.567.113.856 0 .289-.036.586-.113.856-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.163 3.163 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.82 4.82 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z">
                           </path>
                         </svg></a>
-                      <span>12</span>
+                      <span>20</span>
                     </div>
                     <div class="flex text-sm text-gray-700 dark:text-gray-400">
                       <a href="#" class="inline-flex hover:underline">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-blue-400 bi bi-chat" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-4 h-4 mr-1 text-yellow-400 bi bi-chat" viewBox="0 0 16 16">
                           <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z">
                           </path>
-                        </svg>Reply</a>
+                        </svg>Responder</a>
                     </div>
                   </div>
                 </div>
