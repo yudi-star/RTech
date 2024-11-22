@@ -111,12 +111,14 @@
             <!-- End Col -->
       
             <div class="relative ms-4">
-              <img class="w-full rounded-md" src="https://static.vecteezy.com/system/resources/previews/011/993/278/non_2x/3d-render-online-shopping-bag-using-credit-card-or-cash-for-future-use-credit-card-money-financial-security-on-mobile-3d-application-3d-shop-purchase-basket-retail-store-on-e-commerce-free-png.png" alt="Image Description">
+              <img 
+                    class="w-300 rounded-md my-20 mx-auto" src="{{asset('images/carritoP.png')}}"alt="Image Description">
+
               <div class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"></div>
       
               <!-- SVG-->
               <div class="absolute bottom-0 start-0">
-                <svg class="w-2/3 ms-auto h-auto text-white dark:text-slate-900" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {{-- <svg class="w-2/3 ms-auto h-auto text-white dark:text-slate-900" width="630" height="451" viewBox="0 0 630 451" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect x="531" y="352" width="99" height="99" fill="currentColor" />
                   <rect x="140" y="352" width="106" height="99" fill="currentColor" />
                   <rect x="482" y="402" width="64" height="49" fill="currentColor" />
@@ -134,7 +136,7 @@
                   <rect x="482" y="123" width="49" height="49" fill="currentColor" />
                   <rect x="507" y="124" width="49" height="24" fill="currentColor" />
                   <rect x="531" y="49" width="99" height="99" fill="currentColor" />
-                </svg>
+                </svg> --}}
               </div>
               <!-- End SVG-->
             </div>

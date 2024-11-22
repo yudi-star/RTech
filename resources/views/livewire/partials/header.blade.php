@@ -3,7 +3,7 @@
     <div class="relative md:flex md:items-center md:justify-between">
       <div class="flex items-center justify-between bg-black">
         <a class="flex-none text-xl font-semibold text-white focus:outline-none focus:ring-1 focus:ring-gray-600" href="/" aria-label="Brand">
-          <img src="{{asset('images/logo_final.png')}}" alt="Logo" class="w-48 h-12">
+          <img src="{{asset('images/logo1.png')}}" alt="Logo" class="w-48 h-12">
         </a>
         <div class="md:hidden">
           <button type="button" class="hs-collapse-toggle flex justify-center items-center w-9 h-9 text-sm font-semibold rounded-lg border border-gray-200 text-white hover:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none focus:outline-none focus:ring-1 focus:ring-gray-600" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
