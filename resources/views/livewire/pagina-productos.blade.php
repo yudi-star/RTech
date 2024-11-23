@@ -56,10 +56,10 @@
                 <div class="font-semibold">
                   {{Number::currency($rango_precio,'PEN')}}
                 </div>
-                <input type="range" wire:model.live='rango_precio' class="w-full h-1 mb-4 bg-blue-100 rounded appearance-none cursor-pointer" max="5000" value="30000" step="100">
+                <input type="range" wire:model.live='rango_precio' class="w-full h-1 mb-4 bg-blue-100 rounded appearance-none cursor-pointer" max="10000" value="3000" step="100">
                 <div class="flex justify-between ">
                   <span class="inline-block text-lg font-bold text-yellow-300 ">{{Number::currency(100,'PEN')}}</span>
-                  <span class="inline-block text-lg font-bold text-yellow-300 ">{{Number::currency(5000,'PEN')}}</span>
+                  <span class="inline-block text-lg font-bold text-yellow-300 ">{{Number::currency(10000,'PEN')}}</span>
                 </div>
               </div>
             </div>
@@ -109,8 +109,8 @@
   
             </div>
             <!-- pagination start -->
-            <div class="flex justify-end mt-6">
-              {{$productos->links()}}
+            <div class="flex justify-end mt-6 w-full">
+              {{ $productos->links() }}
             </div>
             <!-- pagination end -->
           </div>

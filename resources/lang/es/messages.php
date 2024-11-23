@@ -8,6 +8,8 @@ return [
     'name' => 'Nombre',
     'User' => 'Usuario',
     'Users' => 'Usuarios',
+    'showing' => 'Mostrando :start a :end de :total resultados',
+
     // Y cualquier otra cadena que utilices en tus formularios y componentes  
 ];
 

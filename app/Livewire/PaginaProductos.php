@@ -27,7 +27,7 @@ class PaginaProductos extends Component
     public $en_venta;
     //vincula una propiedad del componente con la URL del navegador.
     #[Url]
-    public $rango_precio=5000;
+    public $rango_precio=10000;
     public function render()
     {
         $productoconsulta = Producto::query()->where('es_activo',1);
