@@ -56,9 +56,9 @@
                 <div class="font-semibold">
                   {{Number::currency($rango_precio,'PEN')}}
                 </div>
-                <input type="range" wire:model.live='rango_precio' class="w-full h-1 mb-4 bg-blue-100 rounded appearance-none cursor-pointer" max="40000" value="30000" step="100">
+                <input type="range" wire:model.live='rango_precio' class="w-full h-1 mb-4 bg-blue-100 rounded appearance-none cursor-pointer" max="40000" value="30000" step="10">
                 <div class="flex justify-between ">
-                  <span class="inline-block text-lg font-bold text-blue-400 ">{{Number::currency(100,'PEN')}}</span>
+                  <span class="inline-block text-lg font-bold text-blue-400 ">{{Number::currency(10,'PEN')}}</span>
                   <span class="inline-block text-lg font-bold text-blue-400 ">{{Number::currency(40000,'PEN')}}</span>
                 </div>
               </div>
@@ -78,10 +78,10 @@
             <div class="flex flex-wrap items-center ">
               @foreach ($productos as $producto)
                <div class="w-full px-3 mb-6 sm:w-1/2 md:w-1/3" wire:key="{{$producto->id}}">
-                 <div class="border border-gray-300 dark:border-gray-700">
-                   <div class="relative bg-gray-200">
+                 <div class="border border-gray-300 dark:border-gray-700"style="height: 400px;">
+                   <div class="relative bg-gray-200 h-3/4">
                      <a href="/products/{{$producto->slug }}" class="">
-                       <img src="{{url('storage', $producto->imagenes[0])}}" alt="{{$producto->nombre}}" class="object-cover w-full h-56 mx-auto ">
+                       <img src="{{url('storage', $producto->imagenes[0])}}" alt="{{$producto->nombre}}" style="height: 200px;width: 100%; object-fit: cover;" class="object-cover w-full h-56 mx-auto ">
                      </a>
                    </div>
                    <div class="p-3 ">
