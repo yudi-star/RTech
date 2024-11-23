@@ -37,25 +37,25 @@
                         class="flex flex-col gap-x-0 mt-5 divide-y divide-dashed divide-gray-200 md:flex-row md:items-center md:justify-end md:gap-x-7 md:mt-0 md:ps-7 md:divide-y-0 md:divide-solid">
 
                         <a wire:navigate
-                            class="font-medium {{ request()->is('/') ? 'text-amarillo' : 'text-white' }} py-3 md:py-6"
+                            class="font-medium {{ request()->is('/') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6"
                             href="/" aria-current="page">
                             Inicio
                         </a>
 
                         <a wire:navigate
-                            class="font-medium {{ request()->is('categories') ? 'text-amarillo' : 'text-white' }} py-3 md:py-6 "
+                            class="font-medium {{ request()->is('categories') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6 "
                             href="/categories">
                             Categorias
                         </a>
 
                         <a wire:navigate
-                            class="font-medium {{ request()->is('products') ? 'text-amarillo' : 'text-white' }} py-3 md:py-6"
+                            class="font-medium {{ request()->is('products') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6"
                             href="/products">
                             Productos
                         </a>
 
                         <a wire:navigate
-                            class="font-medium flex items-center {{ request()->is('cart') ? 'text-amarillo' : 'text-gray-500' }} hover:text-gray-400 py-3 md:py-6 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                            class="font-medium flex items-center {{ request()->is('cart') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6 dark:text-white dark:hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                             href="/cart">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 w-5 h-5 mr-1">
@@ -63,7 +63,7 @@
                                     d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                             </svg>
                             <span class="mr-1">Compras</span> <span
-                                class="py-0.5 px-1.5 rounded-full text-xs font-medium bg-white border border-yellow-300 text-black">0</span>
+                                class="py-0.5 px-1.5 rounded-full text-xs font-medium bg-white border border-yellow-300 text-black">1</span>
                         </a>
 
                         @guest
@@ -86,7 +86,7 @@
                             <div
                                 class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
                                 <button type="button"
-                                    class="flex items-center w-full text-gray-500 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500">
+                                    class="flex items-center w-full text-white hover:text-yellow-400 font-medium dark:text-white dark:hover:text-yellow-400">
                                     {{ Auth::user()->name }}
                                     <svg class="ms-2 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24"
                                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -97,18 +97,18 @@
 
                                 <div
                                     class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10 bg-black md:shadow-md rounded-lg p-2 dark:bg-gray-800 md:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full md:border before:-top-5 before:start-0 before:w-full before:h-5">
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                                    {{-- <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:bg-yellow-500 focus:ring-2 focus:ring-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                         href="#">
-                                        My Orders
+                                        Mis Ordenes
                                     </a>
 
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:bg-yellow-500 focus:ring-2 focus:ring-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                         href="#">
-                                        My Account
-                                    </a>
-                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                                        Mi Cuenta
+                                    </a> --}}
+                                    <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-white hover:bg-yellow-500 focus:ring-2 focus:ring-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                                         href="/logout">
-                                        Logout
+                                        Cerrar Sesión
                                     </a>
                                 </div>
                             </div>
