@@ -1,4 +1,4 @@
-<footer class="bg-gray-900 w-full">
+<footer class="bg-black w-full">
     <div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
       <!-- Grid -->
       <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -20,9 +20,9 @@
           <h4 class="font-semibold text-gray-100">Sobre nosotros</h4>
   
           <div class="mt-3 grid space-y-3">
-            <p class="text-gray-400 hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Blog</p>
+            <p class="text-gray-400 hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Mision y Vision</p>
   
-            <p class="text-gray-400 hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Clientes</p>
+            <p class="text-gray-400 hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Nuestro equipo</p>
           </div>
         </div>
         <!-- End Col -->
