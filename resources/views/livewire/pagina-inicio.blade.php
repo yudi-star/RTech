@@ -14,7 +14,8 @@
             
       
             <div class="relative ms-4">
-              <img class="w-300 rounded-md my-20 mx-auto" src="{{asset('images/carritoP.png')}}"alt="Image Description">
+              <img 
+                    class="w-300 rounded-md my-10 mx-auto relative top-[-20px] left-[20px]" src="{{asset('images/carritoP.png')}}"alt="Image Description">
 
             </div>
             
@@ -147,7 +148,7 @@
                     <p class="text-xs text-gray-500 dark:text-gray-400">Web Developer</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, NOV , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">
@@ -228,7 +229,7 @@
                     <p class="text-xs text-gray-500 dark:text-gray-400">Mananger</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 07, NOV , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">
@@ -307,7 +308,7 @@
                     <p class="text-xs text-gray-500 dark:text-gray-400">Programador Web</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 02, NOV , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">
@@ -387,7 +388,7 @@
                     <p class="text-xs text-gray-500 dark:text-gray-400">Especialista en Bases de Datos</p>
                   </div>
                 </div>
-                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 12, DIC , 2024
+                <p class="px-6 text-base font-medium text-gray-600 dark:text-gray-400"> Publicado el 19, NOV , 2024
                 </p>
               </div>
               <p class="px-6 mb-6 text-base text-gray-500 dark:text-gray-400">

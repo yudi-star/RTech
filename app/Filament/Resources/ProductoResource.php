@@ -67,6 +67,8 @@ class ProductoResource extends Resource
                             ->multiple()
                             ->directory('productos')
                             ->maxFiles(5)
+                            ->preserveFilenames()
+                            ->imageEditor()
                             ->reorderable(),
                     ]),
                 ])->columnSpan(2),

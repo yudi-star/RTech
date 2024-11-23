@@ -78,10 +78,10 @@
             <div class="flex flex-wrap items-center ">
               @foreach ($productos as $producto)
                <div class="w-full px-3 mb-6 sm:w-1/2 md:w-1/3" wire:key="{{$producto->id}}">
-                 <div class="border border-gray-300 dark:border-gray-700">
-                   <div class="relative bg-gray-200">
+                 <div class="border border-gray-300 dark:border-gray-700"style="height: 400px;">
+                   <div class="relative bg-gray-200 h-3/4">
                      <a href="/products/{{$producto->slug }}" class="">
-                       <img src="{{url('storage', $producto->imagenes[0])}}" alt="{{$producto->nombre}}" class="object-cover w-full h-56 mx-auto ">
+                       <img src="{{url('storage', $producto->imagenes[0])}}" alt="{{$producto->nombre}}" style="height: 200px;width: 100%; object-fit: cover;" class="object-cover w-full h-56 mx-auto ">
                      </a>
                    </div>
                    <div class="p-3 ">
