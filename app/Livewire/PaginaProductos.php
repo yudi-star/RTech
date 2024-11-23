@@ -25,7 +25,7 @@ class PaginaProductos extends Component
     
     #[Url]
     public $en_venta;
-    
+    //vincula una propiedad del componente con la URL del navegador.
     #[Url]
     public $rango_precio=30000;
     public function render()
@@ -35,10 +35,12 @@ class PaginaProductos extends Component
         if(!empty($this->selected_categorias)){
             $productoconsulta->whereIn('categoria_id',$this->selected_categorias);
         }
-
+       //verefica si la propiedad select_marca no este vacia, ya que deberia contener los IDs de la marca seleccionada
         if(!empty($this->selected_marcas)){
-            $productoconsulta->whereIn('marca_id',$this->selected_marcas);
+            $productoconsulta->whereIn('marca_id',$this->selected_marcas);//Filtra los productos cuyo marca_id coincida con uno de los IDs presentes en el arreglo selected_marcas.
         }
+
+        // vereficica si la propiedad destacado es verdadero
 
         if($this->destacado){
             $productoconsulta->where('es_destacado',1);
