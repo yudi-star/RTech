@@ -1,16 +1,16 @@
-<div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+<div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto mt-16">
     <section class="overflow-hidden bg-white py-11 font-poppins dark:bg-gray-800">
-      <div class="max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6">
+      <div class="max-w-6xl px-4 py-4 mx-auto lg:py-8 md:px-6"> 
         <div class="flex flex-wrap -mx-4">
           <div class="w-full mb-8 md:w-1/2 md:mb-0" x-data="{ mainImage: '{{url('storage', $producto->imagenes[0])}}' }">
-            <div class="sticky top-0 z-50 overflow-hidden bg-white shadow p-4">
+            <div class="sticky top-0 z-40 overflow-hidden bg-white shadow p-4">
               <div class="relative mb-6 lg:mb-10 lg:h-2/4 ">
                 <img x-bind:src="mainImage" alt="" class="object-cover w-full lg:h-full ">
               </div>
               <div class="flex-wrap hidden md:flex ">
                 @foreach($producto->imagenes as $imagen)
                  <div class="w-1/2 p-2 sm:w-1/4" x-on:click="mainImage='{{url('storage', $imagen)}}'">
-                   <img src="{{url('storage', $imagen)}}" alt="{{$producto->nombre}}" class="object-cover w-full lg:h-20 cursor-pointer hover:border hover:border-blue-500">
+                   <img src="{{url('storage', $imagen)}}" alt="{{$producto->nombre}}" class="object-cover w-full lg:h-20 cursor-pointer hover:border hover:border-yellow-400">
                  </div>
                 @endforeach          
               </div>
@@ -22,7 +22,7 @@
                       </path>
                     </svg>
                   </span>
-                  <h2 class="text-lg font-bold text-gray-700 dark:text-gray-400">Free Shipping</h2>
+                  <h2 class="text-lg font-bold text-gray-700 dark:text-gray-400">Envio Gratis</h2>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
                 </p>
               </div>
               <div class="w-32 mb-8 ">
-                <label for="" class="w-full pb-1 text-xl font-semibold text-gray-700 border-b border-blue-300 dark:border-gray-600 dark:text-gray-400">Quantity</label>
+                <label for="" class="w-full pb-1 text-xl font-semibold text-gray-700 border-b border-yellow-300 dark:border-gray-600 dark:text-gray-400">Cantidad</label>
                 <div class="relative flex flex-row w-full h-10 mt-6 bg-transparent rounded-lg">
                   <button class="w-20 h-full text-gray-600 bg-gray-300 rounded-l outline-none cursor-pointer dark:hover:bg-gray-700 dark:text-gray-400 hover:text-gray-700 dark:bg-gray-900 hover:bg-gray-400">
                     <span class="m-auto text-2xl font-thin">-</span>
@@ -53,8 +53,8 @@
                 </div>
               </div>
               <div class="flex flex-wrap items-center gap-4">
-                <button class="w-full p-4 bg-blue-500 rounded-md lg:w-2/5 dark:text-gray-200 text-gray-50 hover:bg-blue-600 dark:bg-blue-500 dark:hover:bg-blue-700">
-                  Add to cart</button>
+                <button class="w-full p-4 bg-yellow-400 rounded-md lg:w-2/5 dark:text-gray-200 text-gray-50 hover:bg-yellow-500 dark:bg-yellow-400 dark:hover:bg-yellow-500">
+                  Agregar al carrito</button>
               </div>
             </div>
           </div>

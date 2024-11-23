@@ -27,7 +27,7 @@ class PaginaProductos extends Component
     public $en_venta;
     
     #[Url]
-    public $rango_precio=30000;
+    public $rango_precio=5000;
     public function render()
     {
         $productoconsulta = Producto::query()->where('es_activo',1);
