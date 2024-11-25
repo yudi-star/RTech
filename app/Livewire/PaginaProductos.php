@@ -28,6 +28,13 @@ class PaginaProductos extends Component
     //vincula una propiedad del componente con la URL del navegador.
     #[Url]
     public $rango_precio=10000;
+
+
+    #[Url]
+    public $clasificar = 'ultimo';
+
+
+
     public function render()
     {
         $productoconsulta = Producto::query()->where('es_activo',1);
@@ -52,6 +59,14 @@ class PaginaProductos extends Component
 
         if($this->rango_precio){
             $productoconsulta->whereBetween('precio',[0, $this->rango_precio]);
+        }
+
+        if($this->clasificar == 'ultimo'){
+            $productoconsulta->latest();
+        }
+
+        if($this->clasificar == 'precio'){
+            $productoconsulta->orderBy('precio');
         }
 
 

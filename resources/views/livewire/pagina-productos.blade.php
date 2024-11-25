@@ -65,16 +65,16 @@
             </div>
           </div>
           <div class="w-full px-3 lg:w-3/4">
-            {{-- <div class="px-3 mb-4">
+            <div class="px-3 mb-4">
               <div class="items-center justify-between hidden px-3 py-2 bg-gray-100 md:flex dark:bg-gray-900 ">
                 <div class="flex items-center justify-between">
-                  <select name="" id="" class="block w-40 text-base bg-gray-100 cursor-pointer dark:text-gray-400 dark:bg-gray-900">
-                    <option value="">Ordenar por ultimo</option>
-                    <option value="">Ordenar por precio</option>
+                  <select wire:model.live="clasificar" class="block w-40 text-base bg-gray-100 cursor-pointer dark:text-gray-400 dark:bg-gray-900">
+                    <option value="ultimo">Ordenar por ultimo</option>
+                    <option value="precio">Ordenar por precio</option>
                   </select>
                 </div>
               </div>
-            </div> --}}
+            </div>
             <div class="flex flex-wrap items-center ">
               @foreach ($productos as $producto)
                <div class="w-full px-3 mb-6 sm:w-1/2 md:w-1/3" wire:key="{{$producto->id}}">
