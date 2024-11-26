@@ -9,10 +9,15 @@ use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
+use App\Helpers\CarritoGestion;
+use App\Livewire\Partials\Header;
+use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 #[Title('Productos - RebornTech')]
 class PaginaProductos extends Component
 {
+    use LivewireAlert;
+    
     use WithPagination;
 
     #[Url]
@@ -33,7 +38,19 @@ class PaginaProductos extends Component
     #[Url]
     public $clasificar = 'ultimo';
 
+    // Metodo para añadir producto al carrito
 
+    public function añadirProducto($producto_id){
+        $cantidad_total = CarritoGestion::añadirProducto($producto_id);
+        $this->dispatch('actualizarCantidadCarrito', cantidad_total:$cantidad_total)->to(Header::class);
+
+        $this->alert('success', 'Producto añadido al carrito', [
+            'position' => 'bottom-end',
+            'timer' => 3000,
+            'toast' => true,
+            'confirmButtonText' => 'Ok',
+        ]);
+    }
 
     public function render()
     {
