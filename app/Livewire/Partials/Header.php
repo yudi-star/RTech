@@ -10,6 +10,10 @@ class Header extends Component{
 
     public $cantidad_total = 0;
 
+    public function mount(){
+        $this->aumentarCantidadCarrito();
+    }
+
     public function aumentarCantidadCarrito(){
         $this->cantidad_total = count(CarritoGestion::obtenerTotalArticulosDeCookie());
     }

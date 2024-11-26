@@ -58,7 +58,9 @@
               </div>
               <div class="flex flex-wrap items-center gap-4">
                 <button wire:click="añadirAlCarrito({{$producto->id}})" class="w-full p-4 bg-yellow-400 rounded-md lg:w-2/5 dark:text-gray-200 text-gray-50 hover:bg-yellow-500 dark:bg-yellow-400 dark:hover:bg-yellow-500">
-                  <span wire:loading.remove wire:target="añadirAlCarrito({{$producto->id}})">Agregar al carrito</span> <span wire:loading wire:target="añadirAlCarrito({{$producto->id}})">Añadiendo...</span></button>
+                  <span wire:loading.remove wire:target="añadirAlCarrito({{$producto->id}})">Agregar al carrito</span> 
+                  <span wire:loading wire:target="añadirAlCarrito({{$producto->id}})">Añadiendo...</span>
+                </button>
               </div>
             </div>
           </div>

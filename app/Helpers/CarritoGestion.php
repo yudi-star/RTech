@@ -71,6 +71,9 @@ class CarritoGestion{
                 ];
             }
         }
+
+        self::agregarArticulosACookie($items_carrito);
+        return count($items_carrito);
     }
 
     // eliminar producto del carrito

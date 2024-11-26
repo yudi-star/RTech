@@ -15,9 +15,11 @@ class PaginaDetalleProducto extends Component
 
     public $slug;
     public $cantidad = 1;
+    public $contadorCarrito = 0;
 
     public function mount($slug){
         $this->slug = $slug;
+        $this->contadorCarrito = CarritoGestion::obtenerTotalArticulosDeCookie();
     }
 
 
@@ -45,6 +47,7 @@ class PaginaDetalleProducto extends Component
     {
         return view('livewire.pagina-detalle-producto',[
             'producto'=> Producto::where('slug',$this->slug)->firstOrFail(),
+            'contadorCarrito' => $this->contadorCarrito,
         ]);
     }
 }
