@@ -19,15 +19,15 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', PaginaInicio::class);
-Route::get('/categories', PaginaCategorias::class);
-Route::get('/products', PaginaProductos::class);
-Route::get('/cart', PaginaCarrito::class);
-Route::get('/products/{slug}', PaginaDetalleProducto::class);
+Route::get('/categorias', PaginaCategorias::class);
+Route::get('/productos', PaginaProductos::class);
+Route::get('/carrito', PaginaCarrito::class);
+Route::get('/productos/{slug}', PaginaDetalleProducto::class);
 
 
 
 Route::middleware('guest')->group(function(){
-    Route::get('/login', PaginaLogin::class);
+    Route::get('/login', PaginaLogin::class)->name('login');
     Route::get('/register', PaginaRegistro::class);
     Route::get('/forgot', PaginaOlvideContraseña::class);
     Route::get('/reset', PaginaReestablecerContraseña::class);
@@ -41,7 +41,7 @@ Route::middleware('auth')->group(function(){
         return redirect('/');
     });
 
-    Route::get('/chekout', PaginaPago::class);
+    Route::get('/pagina-pago', PaginaPago::class);
     Route::get('/my-orders', PaginaMyOrden::class);
     Route::get('/my-orders/{order}', PaginaDetalleMyOrden::class);
 

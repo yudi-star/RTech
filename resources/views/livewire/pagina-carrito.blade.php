@@ -28,14 +28,16 @@
                                     <td class="py-4">{{ Number::currency($item['precio_unitario'], 'PEN') }}</td>
                                     <td class="py-4">
                                         <div class="flex items-center">
-                                            <button class="border rounded-md py-2 px-4 mr-2">-</button>
+                                            <button wire:click="disminuir_cantidad({{ $item['producto_id'] }})" class="border rounded-md py-2 px-4 mr-2">-</button>
                                             <span class="text-center w-8">{{ $item['cantidad'] }}</span>
-                                            <button class="border rounded-md py-2 px-4 ml-2">+</button>
+                                            <button wire:click="incrementar_cantidad({{ $item['producto_id'] }})" class="border rounded-md py-2 px-4 ml-2">+</button>
                                         </div>
                                     </td>
                                     <td class="py-4">{{ Number::currency($item['precio_total'], 'PEN') }}</td>
-                                    <td><button
-                                            wire:click="eliminar_item_carrito({{ $item['producto_id'] }})" class="bg-slate-300 border-2 border-slate-400 rounded-lg px-3 py-1 hover:bg-red-500 hover:text-white hover:border-red-700">Eliminar</button>
+                                    <td><button wire:click="eliminar_item_carrito({{ $item['producto_id'] }})"
+                                            class="bg-slate-300 border-2 border-slate-400 rounded-lg px-3 py-1 hover:bg-red-500 hover:text-white hover:border-red-700">
+                                            <span wire:loading.remove wire:target="eliminar_item_carrito({{ $item['producto_id'] }})">Eliminar</span>
+                                            <span wire:loading wire:target="eliminar_item_carrito({{ $item['producto_id'] }})" class="text-white">Eliminando....</span></button>
                                     </td>
                                 </tr>
                             @empty
@@ -69,8 +71,8 @@
                         <span class="font-semibold">{{ Number::currency($total, 'PEN') }}</span>
                     </div>
                     @if ($items_carrito)
-                        <button class="bg-yellow-400 text-white py-2 px-4 rounded-lg mt-4 w-full">Finalizar
-                            Compra</button>
+                        <a href="/pagina-pago" class="bg-yellow-400 block text-center text-white py-2 px-4 rounded-lg mt-4 w-full">Finalizar
+                            Compra</a>
                     @endif
                 </div>
             </div>

@@ -44,19 +44,19 @@
 
                         <a wire:navigate
                             class="font-medium {{ request()->is('categories') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6 "
-                            href="/categories">
+                            href="/categorias">
                             Categorias
                         </a>
 
                         <a wire:navigate
-                            class="font-medium {{ request()->is('products') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6"
-                            href="/products">
+                            class="font-medium {{ request()->is('productos') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6"
+                            href="/productos">
                             Productos
                         </a>
 
                         <a wire:navigate
-                            class="font-medium flex items-center {{ request()->is('cart') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6 dark:text-white dark:hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                            href="/cart">
+                            class="font-medium flex items-center {{ request()->is('carrito') ? 'text-amarillo' : 'text-white' }} hover:text-yellow-400 py-3 md:py-6 dark:text-white dark:hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                            href="/carrito">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="flex-shrink-0 w-5 h-5 mr-1">
                                 <path stroke-linecap="round" stroke-linejoin="round"

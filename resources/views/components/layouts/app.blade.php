@@ -7,6 +7,8 @@
         <title>{{ $title ?? 'Reborntech' }}</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
+
+        <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
     </head>
     <body class="bg-slate-200 dark:bg-slate-700">
         @livewire('partials.Header')

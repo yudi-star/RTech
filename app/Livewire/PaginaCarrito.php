@@ -25,6 +25,17 @@ class PaginaCarrito extends Component{
         $this->dispatch('actualizarCantidadCarrito', cantidad_total: count($this->items_carrito))->to(Header::class);
     }
 
+    public function incrementar_cantidad($producto_id){
+        $this->items_carrito = CarritoGestion::aumentarCantidadProducto($producto_id);
+        $this->total = CarritoGestion::obtenerPrecioTotalCarrito($this->items_carrito);
+    }
+
+
+    public function disminuir_cantidad($producto_id){
+        $this->items_carrito = CarritoGestion::disminuirCantidadProducto($producto_id);
+        $this->total = CarritoGestion::obtenerPrecioTotalCarrito($this->items_carrito);
+    }
+
     public function render()
     {
         return view('livewire.pagina-carrito');

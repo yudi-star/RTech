@@ -48,7 +48,7 @@
           <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
             @foreach($marcas as $marca)
              <div class="bg-white rounded-lg shadow-md dark:bg-gray-800" wire:key="{{$marca->id}}">
-               <a href="/products?selected_marcas[0]={{$marca->id}}" class="">
+               <a href="/productos?selected_marcas[0]={{$marca->id}}" class="">
                  <img src="{{url('storage', $marca->imagen)}}" alt="{{$marca->nombre}}" class="object-contain w-full h-64 rounded-t-lg bg-white">
                </a>
                <div class="p-5 text-center">
@@ -88,7 +88,7 @@
           <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
 
             @foreach($categorias as $categoria)
-             <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/products?selected_categorias[0]={{$categoria->id}}" wire:key="{{$categoria->id}}">
+             <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/productos?selected_categorias[0]={{$categoria->id}}" wire:key="{{$categoria->id}}">
                <div class="p-4 md:p-5">
                  <div class="flex justify-between items-center">
                    <div class="flex items-center">

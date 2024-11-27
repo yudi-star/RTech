@@ -91,7 +91,7 @@
                             <div class="w-full px-3 mb-6 sm:w-1/2 md:w-1/3" wire:key="{{ $producto->id }}">
                                 <div class="border border-gray-300 dark:border-gray-700"style="height: auto;">
                                     <div class="relative bg-white h-3/4">
-                                        <a href="/products/{{ $producto->slug }}" class="">
+                                        <a href="/productos/{{ $producto->slug }}" class="">
                                             <img src="{{ url('storage', $producto->imagenes[0]) }}"
                                                 alt="{{ $producto->nombre }}"
                                                 style="height: auto;width: 100%; object-fit: cover;"
