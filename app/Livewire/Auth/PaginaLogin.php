@@ -19,7 +19,7 @@ class PaginaLogin extends Component{
 
 
         if(!Auth::attempt(['email' => $this->email, 'password' => $this->password])){
-            session()->flash('mensaje', 'Credenciales incorrectas');
+            session()->flash('error', 'Credenciales incorrectas');
             return;
         }
 

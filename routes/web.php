@@ -29,8 +29,8 @@ Route::get('/productos/{slug}', PaginaDetalleProducto::class);
 Route::middleware('guest')->group(function(){
     Route::get('/login', PaginaLogin::class)->name('login');
     Route::get('/register', PaginaRegistro::class);
-    Route::get('/forgot', PaginaOlvideContraseña::class);
-    Route::get('/reset', PaginaReestablecerContraseña::class);
+    Route::get('/olvide-contraseña', PaginaOlvideContraseña::class)->name('password.request');
+    Route::get('/reset/{token}', PaginaReestablecerContraseña::class)->name('password.reset');
 });
 
 
