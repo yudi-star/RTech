@@ -1,116 +1,131 @@
 <div>
     <!-- separamaos-->
-      <div class="w-full h-screen bg-gradient-to-r from-cyan-50 to-yellow-100 py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+    <div class="w-full h-screen bg-gradient-to-r from-cyan-50 to-yellow-100 py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
-          <!-- Grid -->
-          <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
-            <div>
-              <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
-                Empieza a comprar en 
-                <span class="text-yellow-300" style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;">RebornTech</span>
-              </h1>
-              <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">Compra productos de hogar, oficina y gaming de alta calidad a precios accesibles.</p>
-            </div>
-            
-      
-            <div class="relative ms-4">
-              <img 
-                    class="w-300 rounded-md my-10 mx-auto relative top-[-20px] left-[20px]" src="{{asset('images/carritoP.png')}}"alt="Image Description">
+            <!-- Grid -->
+            <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+                <div>
+                    <h1
+                        class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
+                        Empieza a comprar en
+                        <span class="text-yellow-300"
+                            style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;">RebornTech</span>
+                    </h1>
+                    <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">Compra productos de hogar, oficina y gaming
+                        de alta calidad a precios accesibles.</p>
+                </div>
+
+
+                <div class="relative ms-4">
+                    <img class="w-300 rounded-md my-10 mx-auto relative top-[-20px] left-[20px]"
+                        src="{{ asset('images/carritoP.png') }}"alt="Image Description">
+
+                </div>
 
             </div>
-            
-          </div>
-          <!-- End Grid -->
+            <!-- End Grid -->
         </div>
-      </div>
-     <!-- Comienza brand-->
+    </div>
+    <!-- Comienza brand-->
     <section class="py-20">
         <div class="max-w-xl mx-auto">
-          <div class="text-center ">
-            <div class="relative flex flex-col items-center">
-              <h1 class="text-5xl font-bold dark:text-gray-200"> Encuentra conocidas<span class="text-yellow-300" style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;"> Marcas
-                </span> </h1>
-              <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                <div class="flex-1 h-2 bg-yellow-300">
+            <div class="text-center ">
+                <div class="relative flex flex-col items-center">
+                    <h1 class="text-5xl font-bold dark:text-gray-200"> Encuentra conocidas<span class="text-yellow-300"
+                            style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;">
+                            Marcas
+                        </span> </h1>
+                    <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
+                        <div class="flex-1 h-2 bg-yellow-300">
+                        </div>
+                        <div class="flex-1 h-2 bg-yellow-400">
+                        </div>
+                        <div class="flex-1 h-2 bg-yellow-500">
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-1 h-2 bg-yellow-400">
-                </div>
-                <div class="flex-1 h-2 bg-yellow-500">
-                </div>
-              </div>
+                <p class="mb-12 text-base text-center text-gray-500">
+
+                </p>
             </div>
-            <p class="mb-12 text-base text-center text-gray-500">
-              
-            </p>
-          </div>
         </div>
         <div class="justify-center max-w-6xl px-4 py-4 mx-auto lg:py-0">
-          <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
-            @foreach($marcas as $marca)
-             <div class="bg-white rounded-lg shadow-md dark:bg-gray-800" wire:key="{{$marca->id}}">
-               <a href="/productos?selected_marcas[0]={{$marca->id}}" class="">
-                 <img src="{{url('storage', $marca->imagen)}}" alt="{{$marca->nombre}}" class="object-contain w-full h-64 rounded-t-lg bg-white">
-               </a>
-               <div class="p-5 text-center">
-                 <a href="" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
-                   {{$marca->nombre}}
-                 </a>
-               </div>
-             </div>
-            @endforeach
-          </div>
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
+                @foreach ($marcas as $marca)
+                    <div class="bg-white rounded-lg shadow-md dark:bg-gray-800" wire:key="{{ $marca->id }}">
+                        <a href="/productos?selected_marcas[0]={{ $marca->id }}" class="">
+                            <img src="{{ url('storage', $marca->imagen) }}" alt="{{ $marca->nombre }}"
+                                class="object-contain w-full h-64 rounded-t-lg bg-white">
+                        </a>
+                        <div class="p-5 text-center">
+                            <a href=""
+                                class="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-300">
+                                {{ $marca->nombre }}
+                            </a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
-      </section>
+    </section>
     <!-- Termina brand-->
     <!-- Comienza categorias-->
     <div class="bg-orange-200 py-20">
         <div class="max-w-xl mx-auto">
-          <div class="text-center ">
-            <div class="relative flex flex-col items-center">
-              <h1 class="text-5xl font-bold dark:text-gray-200"> Encuentra diferentes <span class="text-yellow-300" style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;"> Categorías
-                </span> </h1>
-              <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
-                <div class="flex-1 h-2 bg-yellow-300">
+            <div class="text-center ">
+                <div class="relative flex flex-col items-center">
+                    <h1 class="text-5xl font-bold dark:text-gray-200"> Encuentra diferentes <span
+                            class="text-yellow-300"
+                            style="text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;">
+                            Categorías
+                        </span> </h1>
+                    <div class="flex w-40 mt-2 mb-6 overflow-hidden rounded">
+                        <div class="flex-1 h-2 bg-yellow-300">
+                        </div>
+                        <div class="flex-1 h-2 bg-yellow-400">
+                        </div>
+                        <div class="flex-1 h-2 bg-yellow-500">
+                        </div>
+                    </div>
                 </div>
-                <div class="flex-1 h-2 bg-yellow-400">
-                </div>
-                <div class="flex-1 h-2 bg-yellow-500">
-                </div>
-              </div>
-            </div>
-            <p class="mb-12 text-base text-center text-gray-500">
-              
-            </p>
-          </div>
-        </div>
-      
-        <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+                <p class="mb-12 text-base text-center text-gray-500">
 
-            @foreach($categorias as $categoria)
-             <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/productos?selected_categorias[0]={{$categoria->id}}" wire:key="{{$categoria->id}}">
-               <div class="p-4 md:p-5">
-                 <div class="flex justify-between items-center">
-                   <div class="flex items-center">
-                     <img class="h-[2.375rem] w-[2.375rem] rounded-full" src="{{url('storage',$categoria->imagen)}}" alt="{{$categoria->nombre}}">
-                     <div class="ms-3">
-                       <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                         {{$categoria->nombre}}
-                       </h3>
-                     </div>
-                   </div>
-                   <div class="ps-3">
-                     <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                       <path d="m9 18 6-6-6-6" />
-                     </svg>
-                   </div>
-                 </div>
-               </div>
-             </a>
-            @endforeach
-          </div>
+                </p>
+            </div>
         </div>
-      </div>
+
+        <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
+
+                @foreach ($categorias as $categoria)
+                    <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                        href="/productos?selected_categorias[0]={{ $categoria->id }}" wire:key="{{ $categoria->id }}">
+                        <div class="p-4 md:p-5">
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center">
+                                    <img class="h-[2.375rem] w-[2.375rem] rounded-full"
+                                        src="{{ url('storage', $categoria->imagen) }}" alt="{{ $categoria->nombre }}">
+                                    <div class="ms-3">
+                                        <h3
+                                            class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
+                                            {{ $categoria->nombre }}
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="ps-3">
+                                    <svg class="flex-shrink-0 w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </div>
+    </div>
     <!--Termina categorias-->
     <!-- empieza clientes-->
     {{-- <section class="py-14 font-poppins dark:bg-gray-800">

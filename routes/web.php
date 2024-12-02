@@ -45,6 +45,6 @@ Route::middleware('auth')->group(function(){
     Route::get('/my-orders', PaginaMyOrden::class);
     Route::get('/my-orders/{order}', PaginaDetalleMyOrden::class);
 
-    Route::get('/success', PaginaExito::class);
-    Route::get('/cancel', PaginaCancelar::class);
+    Route::get('/pago-exitoso', PaginaExito::class)->name('pago.exitoso');
+    Route::get('/pago-cancelado', PaginaCancelar::class)->name('pago.cancelado');
 });
