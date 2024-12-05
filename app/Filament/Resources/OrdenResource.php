@@ -34,7 +34,7 @@ use Filament\Tables\Actions\ViewAction;
 use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\DeleteAction;
 use App\Filament\Resources\OrdenResource\RelationManagers\DireccionRelationManager;
-
+use Illuminate\Database\Eloquent\Model;
 class OrdenResource extends Resource
 {
     protected static ?string $model = Orden::class;
@@ -260,7 +260,7 @@ class OrdenResource extends Resource
                 ActionGroup::make([
                     ViewAction::make(),
                     EditAction::make(),
-                    DeleteAction::make(),
+                    DeleteAction::make()
                 ])
             ])
             ->bulkActions([

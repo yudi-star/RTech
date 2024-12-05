@@ -9,7 +9,7 @@
                 <div class="flex items-center justify-center w-full pb-6 space-x-4 md:justify-start">
                   <div class="flex flex-col items-start justify-start space-y-2">
                     <p class="text-lg font-semibold leading-4 text-left text-gray-800 dark:text-gray-400">
-                      {{$orden->direccion->nombre}}</p>
+                      {{$orden->direccion->nombre}} {{$orden->direccion->apellido}}</p>
                     <p class="text-sm leading-4 text-gray-600 dark:text-gray-400">{{$orden->direccion->distrito}}</p>
                     <p class="text-sm leading-4 text-gray-600 dark:text-gray-400">{{$orden->direccion->ciudad}},{{$orden->direccion->codigo_postal}}</p>
                     <p class="text-sm leading-4 cursor-pointer dark:text-gray-400">Celular: {{$orden->direccion->telefono}}</p>
