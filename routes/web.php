@@ -43,8 +43,8 @@ Route::middleware('auth')->group(function(){
 
     Route::get('/pagina-pago', PaginaPago::class);
     Route::get('/my-orders', PaginaMyOrden::class);
-    Route::get('/my-orders/{order}', PaginaDetalleMyOrden::class);
+    Route::get('/my-orders/{orden_id}', PaginaDetalleMyOrden::class)->name('my-orders.show');
 
-    Route::get('/success', PaginaExito::class);
-    Route::get('/cancel', PaginaCancelar::class);
+    Route::get('/success', PaginaExito::class)->name('success');
+    Route::get('/cancel', PaginaCancelar::class)->name('cancel');
 });

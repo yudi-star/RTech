@@ -63,7 +63,7 @@ class OrdenResource extends Resource
                                 ->label('Método de pago')
                                 ->options([
                                     'tarjeta' => 'Tarjeta',
-                                    'efectivo' => 'Pagar con efectivo cuando se le entregue el pedido',
+                                    'efectivo' => 'Pago contra entrega',
                                 ])
                                 ->required(),
 
@@ -72,7 +72,7 @@ class OrdenResource extends Resource
                                 ->options([
                                     'pendiente' => 'Pendiente',
                                     'pagado' => 'Pagado',
-                                    'cancelado' => 'Cancelado',
+                                    'fallido' => 'Fallido',
                                 ])
                                 ->default('pendiente')
                                 ->required(),

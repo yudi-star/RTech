@@ -192,7 +192,12 @@
                     </hr>
                 </div>
                 <button type="submit" class="bg-yellow-400 mt-4 w-full p-3 rounded-lg text-lg text-white hover:bg-yellow-500">
-                    Confirmar pedido
+                    <span wire:loading.remove>Confirmar pedido</span>
+                    <span wire:loading>
+                        <svg class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+                        </svg>
+                        Procesando...
+                    </span>
                 </button>
                 <div class="bg-white mt-4 rounded-xl shadow p-4 sm:p-7 dark:bg-slate-900">
                     <div class="text-xl font-bold underline text-gray-700 dark:text-white mb-2">
