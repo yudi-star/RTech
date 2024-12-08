@@ -12,7 +12,6 @@ use Illuminate\Queue\SerializesModels;
 class PedidoRealizado extends Mailable
 {
     use Queueable, SerializesModels;
-
     public $orden;
 
     /**

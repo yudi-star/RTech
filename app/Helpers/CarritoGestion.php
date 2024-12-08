@@ -30,8 +30,8 @@ class CarritoGestion{
                     'nombre' => $producto->nombre,
                     'imagenes' => $producto->imagenes[0],
                     'cantidad' => 1,
-                    'precio_unitario' => $producto->precio,
-                    'precio_total' => $producto->precio
+                    'precio_unitario' => (float)$producto->precio,
+                    'precio_total' => (float)$producto->precio
                     
                 ];
             }
@@ -152,6 +152,7 @@ class CarritoGestion{
     // obtener el precio total del carrito
 
     static public function obtenerPrecioTotalCarrito($items){
-        return array_sum(array_column($items, 'precio_total'));
+        $total = array_sum(array_column($items, 'precio_total'));
+        return $total;
     }
 }
